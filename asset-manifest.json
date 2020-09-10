@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Intranet-Demo-Version/static/css/main.ad76e5f9.chunk.css",
+    "main.js": "/Intranet-Demo-Version/static/js/main.9dda14f7.chunk.js",
+    "main.js.map": "/Intranet-Demo-Version/static/js/main.9dda14f7.chunk.js.map",
+    "runtime-main.js": "/Intranet-Demo-Version/static/js/runtime-main.a82fe6d1.js",
+    "runtime-main.js.map": "/Intranet-Demo-Version/static/js/runtime-main.a82fe6d1.js.map",
+    "static/css/2.dc088e6c.chunk.css": "/Intranet-Demo-Version/static/css/2.dc088e6c.chunk.css",
+    "static/js/2.879ac3b4.chunk.js": "/Intranet-Demo-Version/static/js/2.879ac3b4.chunk.js",
+    "static/js/2.879ac3b4.chunk.js.map": "/Intranet-Demo-Version/static/js/2.879ac3b4.chunk.js.map",
+    "index.html": "/Intranet-Demo-Version/index.html",
+    "precache-manifest.7c635d61e6a843a2ebede0f4164b6e37.js": "/Intranet-Demo-Version/precache-manifest.7c635d61e6a843a2ebede0f4164b6e37.js",
+    "service-worker.js": "/Intranet-Demo-Version/service-worker.js",
+    "static/css/2.dc088e6c.chunk.css.map": "/Intranet-Demo-Version/static/css/2.dc088e6c.chunk.css.map",
+    "static/css/main.ad76e5f9.chunk.css.map": "/Intranet-Demo-Version/static/css/main.ad76e5f9.chunk.css.map",
+    "static/js/2.879ac3b4.chunk.js.LICENSE.txt": "/Intranet-Demo-Version/static/js/2.879ac3b4.chunk.js.LICENSE.txt",
+    "static/media/HelloBox.css": "/Intranet-Demo-Version/static/media/5k Wallpapers for iMac 8.8e243691.jpg",
+    "static/media/AutorizationPage.css": "/Intranet-Demo-Version/static/media/bg.f32eaf6b.jpg",
+    "static/media/all.min.css": "/Intranet-Demo-Version/static/media/fa-solid-900.ee09ad75.woff",
+    "static/media/Weather.css": "/Intranet-Demo-Version/static/media/new-history-forecast-bulk.40127a5e.png",
+    "static/media/Birthday.css": "/Intranet-Demo-Version/static/media/unnamed.6b2db445.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a82fe6d1.js",
+    "static/css/2.dc088e6c.chunk.css",
+    "static/js/2.879ac3b4.chunk.js",
+    "static/css/main.ad76e5f9.chunk.css",
+    "static/js/main.9dda14f7.chunk.js"
+  ]
+}
