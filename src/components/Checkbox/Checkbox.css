@@ -1,0 +1,73 @@
+.checkbox{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 20px auto;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.check{
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 21px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0,0,0);
+}
+  
+.check:before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(#223254,.03);
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+    
+.check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #C8CCD4;
+    stroke-width: 1.5;
+    transform: translate3d(0,0,0);
+    transition: all .2s ease;
+}
+    
+.check svg path{
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+.check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+      
+.check svg polyline:hover .check svg polyline:before{
+    opacity: 1;
+}
+.check svg polyline:hover svg{
+    stroke: #1828ff;
+}
+      
+#checkbox{
+    display: none;
+}
+#checkbox:checked + .check svg{
+    stroke: #1828ff;
+}
+#checkbox:checked + .check path{
+    stroke-dashoffset: 60;
+    transition: all .3s linear;
+}
+#checkbox:checked + .check polyline{
+    stroke-dashoffset: 42;
+    transition: all .2s linear;
+    transition-delay: .15s;
+}

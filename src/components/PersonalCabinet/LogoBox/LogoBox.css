@@ -1,0 +1,35 @@
+.logo-box i{
+    opacity: 0;
+    font-size: 0;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(114,36,241,1) 19%, rgba(235,143,137,1) 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    transition: all .5s linear;
+    display: block;
+}
+.logo-box{
+    width: 185px;
+    height: 157px;
+    text-align: center;
+    line-height: 1.3rem;
+}
+.logo-box:hover{
+    padding-bottom: 0;
+}
+.logo-box:hover i {
+    opacity: 1;
+    font-size: 70px;
+    position: relative;
+    transition: all .3s linear;
+}
+.logo-box-section .big-box{
+    width: 375px;
+    background: linear-gradient(0deg, rgba(122,86,255,1) 6%, rgba(37,139,255,1) 60%);
+    color: white;
+}
+.logo-box-section .big-box i{
+    background: transparent !important;
+    -webkit-text-fill-color: white !important;
+}

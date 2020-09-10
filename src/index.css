@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+input[type=text], input[type=number], input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+a{
+    color: #1828ff;
+    transition: all .3s linear;
+}
+a:hover{
+    color: #feb163;
+    text-decoration: none;
+}
+.demo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #1828ff;
+    background-color: rgba(256,256,256,.5);
+    border-radius: 10px;
+    display: inline;
+    padding: 10px;
+    font-weight: 500;
+}
+.blue-btn{
+    background-color: #1828ff;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 0.3rem 1rem;
+    transition: all .2s linear;
+}
+.blue-btn:hover{
+    filter: drop-shadow(2px 3px 4px #ffffff4f);
+    color: #fff;
+}
+.form-control{
+    color: black;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 3px solid #dfdfdf;
+}
+.form-control:focus {
+    border-color: #1828ff;
+    box-shadow: 0 0 0 0.2rem rgb(24 40 255 / 24%);
+}
+fieldset{
+    border: none;
+}
+.box{
+    padding: 10px;
+    font-size: 21px;
+    font-weight: 500;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    margin: 0 2.5px 7.5px;
+    cursor: pointer;
+    transition: all .3s linear;
+    filter: drop-shadow(2px 3px 4px #0000003d);
+    color: black;
+    text-align: center;
+}
+.box:hover{
+    box-shadow: 0 0 7px 0 #0000003d;
+}
+.small-blue-btn{
+    background-color: #607d8b;
+    color: white;
+    margin-top: 10px;
+}
+.small-blue-btn:hover{
+    filter: drop-shadow(2px 3px 4px #0000003d);
+    color: white;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+button:focus{
+    outline: none;
 }

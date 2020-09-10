@@ -1,0 +1,8 @@
+.birthday-box{
+    background: linear-gradient(180deg, rgba(254,179,5,1) 29%, rgba(250,232,81,1) 82%);
+    line-height: 1.2rem;
+    cursor: unset !important;
+}
+.birthday-box:hover{
+    box-shadow: none !important;
+}

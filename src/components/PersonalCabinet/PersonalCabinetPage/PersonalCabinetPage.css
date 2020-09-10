@@ -1,0 +1,23 @@
+.personal-cabinet-page{
+    background-color: #f5f5f5;
+    padding-right: 19px;
+    padding-left: 5px;
+    height: 100vh;
+}
+.personal-cabinet-page .row{
+    padding-top: 60px;
+}
+.logo-box-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.logo-box-section .big-box{
+    width: 375px;
+    background: linear-gradient(0deg, rgba(122,86,255,1) 6%, rgba(37,139,255,1) 60%);
+    color: white;
+}
+.logo-box-section .big-box i{
+    background: transparent !important;
+    -webkit-text-fill-color: white !important;
+}

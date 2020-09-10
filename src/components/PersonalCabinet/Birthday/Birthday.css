@@ -1,0 +1,5 @@
+.birthday-item{
+    list-style-image: url('../../../img/unnamed.png');
+    text-align: left;
+    cursor: unset !important;
+}

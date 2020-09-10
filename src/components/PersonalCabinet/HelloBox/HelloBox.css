@@ -1,0 +1,13 @@
+.hello-box{
+    background: url('../../../img/5k\ Wallpapers\ for\ iMac\ 8.jpg') no-repeat;
+    background-size: cover;
+    color: white !important;
+    font-weight: 400 !important;
+    align-items: end !important;
+    justify-content: flex-end !important;
+    cursor: unset !important;
+}
+.hello-box:hover{
+    padding-bottom: 10px;
+    box-shadow: none !important;
+}

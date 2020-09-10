@@ -1,0 +1,19 @@
+.weather-box{
+    background: url('../../../img/new-history-forecast-bulk.png') no-repeat;
+    background-size: cover;
+    background-position: right;
+    align-items: baseline !important;
+    opacity: .8;
+    cursor: unset !important;
+}
+.weather-box div{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    line-height: 1.3rem;
+    text-transform: capitalize;
+    text-align: left;
+}
+.weather-box:hover{
+    box-shadow: none !important;
+}

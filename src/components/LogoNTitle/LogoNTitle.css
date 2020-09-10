@@ -1,0 +1,6 @@
+.logo-n-title i{
+    font-size: 50px;
+    background: linear-gradient(180deg, rgba(0,82,137,1) 35%, rgba(3,156,249,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
