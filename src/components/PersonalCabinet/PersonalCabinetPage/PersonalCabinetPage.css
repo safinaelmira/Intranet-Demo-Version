@@ -2,7 +2,7 @@
     background-color: #f5f5f5;
     padding-right: 19px;
     padding-left: 5px;
-    height: 100vh;
+    min-height: 100vh;
 }
 .personal-cabinet-page .row{
     padding-top: 60px;

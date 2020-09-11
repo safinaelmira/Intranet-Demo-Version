@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
+import MessageInChat from '../MessageInChat';
 
 import './Chat.css';
 
 class Chat extends Component {
     
     state={
+        show: false,
         msg: "",
-        li: [""]
+        li: []
     }
 
     componentDidMount(){
@@ -18,20 +20,33 @@ class Chat extends Component {
 
         this.setState(state => {
             return({msg});
-        })
+        });
     }
 
     sendMsg(e){
         e.preventDefault();        
 
-        this.setState({
-            msg: "",
-            li: this.state.msg
+        this.setState(state => {
+            return({
+                show: true, 
+                msg: "",
+                li: [...this.state.li, this.state.msg]
+            });
         });
+
+        console.log(this.state);
     }
 
 
     render(){
+
+        const mymsg = this.state.li.map((msg,index) => <div className="msg-block" key={`msg#${index}`}>
+                                                            <div className="chat-field-msg">{msg}</div>
+                                                            <figure>
+                                                                <img src={this.props.iamuser.photo} alt="child" className="child-photo"/>
+                                                                <figcaption>{this.props.iamuser.name}</figcaption>
+                                                            </figure>
+                                                        </div>);
 
         return (
             <div className="box big-box chat-box">
@@ -42,7 +57,7 @@ class Chat extends Component {
                             className="form-control form-control-sm" 
                             placeholder="Написать в чат" 
                             name="msg" 
-                            autoComplete="none" 
+                            autoComplete="off"
                             value={this.state.msg}
                             onChange={(e) => this.saveMsg(e)}
                             required
@@ -53,12 +68,14 @@ class Chat extends Component {
                         ><i className="far fa-envelope"></i></button>
                     </fieldset>
                 </form>
-                <ul className="chat-field list-group mt-5">
-                    {this.state.li[0] !== "" && <li className="chat-field-msg">{this.state.li}</li>}
-                </ul>
+                <MessageInChat/>
+                <div className="chat-field list-group">
+                    {this.state.show && mymsg}
+                </div>
             </div>
         )
     }
 }
 
 export default Chat;
+
